@@ -6,59 +6,55 @@ To write C# program to find the eligibility for admission to an engineering cour
 ## Algorithnm:
 
 ## Program:
-'''cs
+```cs
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace exp1
 {
-    internal class Program
+    class Eligibility
     {
         static void Main(string[] args)
         {
-            int m;
-            int p;
-            int c;
-            int total;
-            int total2;
-            Console.WriteLine("Enter maths marks;");
-            m= Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter physics marks;");
-            p = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter chemistry marks");
-            c = Convert.ToInt32(Console.ReadLine());
-            total = m + p + c;
-            total2 = m + p;
-            if(m>=65 && p>=55 && c >= 50)
+            string name;
+            int math, phy, chem;
+            Console.Write("Enter your name:");
+            name = Console.ReadLine();
+            Console.Write("Enter Maths Marks:");
+            math = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Physics Marks:");
+            phy = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Chemistry Marks:");
+            chem = Convert.ToInt32(Console.ReadLine());
+            int Sum = math + phy + chem;
+            int MPTot = math + phy;
+            if (math >= 65 && phy >= 55 && chem >= 50)
             {
-                if (total >= 180 || total2 >= 140)
+                if (Sum >= 180 || MPTot >= 140)
                 {
-                    Console.WriteLine("The student is eligible");
-
+                    Console.WriteLine(name + " is eligible for admission to an engineering course.");
                 }
                 else
                 {
-                    Console.WriteLine("The student is not eligibile");
+                    Console.WriteLine(name + " is not eligible for admission to an engineering course due to insufficient marks.");
                 }
             }
             else
             {
-                Console.WriteLine("The student is not eligibile");
+                Console.WriteLine(name + " is not eligible for admission to an engineering course due to insufficient marks.");
             }
-
             Console.Read();
-
         }
     }
 }
-'''
+```
+
+
 
 
 ## Output:
 
+![c# output](https://user-images.githubusercontent.com/93978702/225874408-7d24472b-0c5e-43fb-82a3-49f63fbe7b92.png)
 
 
 ## Result:
+Hence the output for the c# program has been executed and run successfully.
