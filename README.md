@@ -4,9 +4,27 @@
 To write C# program to find the eligibility for admission to an engineering course
 
 ## Algorithnm:
+### Step 1:
+Create a new Class named admission.
+### Step 2:
+Create variable of respective data types to store marks & name.
+### Step 3:
+Calculate the total and store it.
+### Step 4:
+The Conditions for admission are:
+1. Marks in maths >= 65 & Marks in physics >=55 & Marks in chemistry >=50
+2. Total marks in all three subjects >= 180 or total in maths and physics >= 140
+### Step 5:
+Using Nested if check whether the person is eligible or not for admission based on above conditions.
+### Step 6:
+Print the status for admission.
+### Step 7:
+End of the Program.
 
 ## Program:
-```cs
+Developed by: Shankar Saradha
+Register Number: 212221240052
+```c#
 using System;
 
 namespace exp1
